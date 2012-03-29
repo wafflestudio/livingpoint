@@ -1,0 +1,6 @@
+제목: <%= @post.title %>
+내용: <%= @post.contents %>
+<%= link_to "수정하기", edit_post_path(@post) %>
+<%= link_to "삭제하기", post_path(@post), :method => :delete %>
+<br />
+<%= link_to "돌아가기", root_path %>

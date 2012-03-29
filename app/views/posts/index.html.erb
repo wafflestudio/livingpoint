@@ -1,0 +1,8 @@
+<% if !@post.nil? %>
+  제목: <%= @post.title %>
+  내용: <%= @post.contents %>
+  <%= link_to "조회하기", post_path(@post) %>
+<% end %>
+<br />
+<%= link_to "추가하기", new_post_path %>
+<%= link_to "다른거", posts_path %>

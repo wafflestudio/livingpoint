@@ -1,0 +1,7 @@
+<%= form_for(@post) do |f| %>
+  <%= f.label :title, "제목" %>
+  <%= f.text_field :title %>
+  <%= f.label :contents, "내용" %>
+  <%= f.text_field :contents %>
+  <%= f.submit "추가하기" %>
+<% end %>
